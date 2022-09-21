@@ -11,7 +11,7 @@ const authControllers = {};
 let randomstr;
 
 const storage = require('../db/storage');
-const { getFileExtension } = require('../utils/utils');
+const { getFileExtension } = require('../helpers/getFileExtension');
 
 const PROFILE_IMAGE_DIR = 'avatars';
 authControllers.signup = async (req, res) => {

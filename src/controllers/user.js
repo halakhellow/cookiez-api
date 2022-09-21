@@ -1,6 +1,6 @@
 const UserModel = require('../models/user').User;
 const storage = require('../db/storage');
-const { getFileExtension } = require('../utils/utils');
+const { getFileExtension } = require('../helpers/getFileExtension');
 
 const PROFILE_IMAGE_DIR = 'avatars';
 
@@ -8,7 +8,6 @@ const fetchUserAvatar = async (req, res) => {
   try {
     const { userId } = req.params;
     const user = await UserModel.findById(userId);
-    console.log(user);
     res.status(200).json(user.avatar);
   } catch (error) {
     res.status(500).json({ error });

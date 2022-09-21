@@ -6,7 +6,7 @@ const Dishes = require('../models/dish');
 const dishControllers = {};
 
 const storage = require('../db/storage');
-const { getFileExtension } = require('../utils/utils');
+const { getFileExtension } = require('../helpers/getFileExtension');
 
 const DISH_IMAGE_DIR = 'dishes';
 
