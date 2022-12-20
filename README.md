@@ -14,7 +14,7 @@ An API for cookiez website which is a platform to connect customers who are look
 
 ### Documentation:
 
-Swagger docs link on [Heroku](https://cookiez-app.herokuapp.com/api-docs/)
+Swagger docs link on [render](https://cookiez-api.onrender.com/api-docs/)
 
 
 
